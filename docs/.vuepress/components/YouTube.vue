@@ -1,0 +1,33 @@
+<template>
+    <div class="resp-container">
+        <iframe class="resp-iframe" :src="src" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</template>
+
+<style type="text/css">
+.resp-container {
+    position: relatyoutube-ive;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+</style>
+
+<script>
+
+export default {
+  props: {
+    src: {
+      type: String,
+      required: true
+    }
+}
+}
+</script>
