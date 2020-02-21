@@ -2,7 +2,7 @@
 
 ::: tip
 
-In case of issues like: you cannot access the building, room is taken, anything that requires an intervention - message **Mireia** on Slack (`@mireia` is the handle).
+In case of issues - you cannot access the building, room is taken, anything that requires an intervention - message **Carys** on Slack.
 
 :::
 
@@ -17,7 +17,7 @@ In case of issues like: you cannot access the building, room is taken, anything 
     - sending a survey after class is over
     - sharing the survey with all the other teachers
 - supporting teacher is there mainly for students to help them with exercises. Supporting teacher should be **active** - rather than waiting for students calling her, she should watch students and step in when appropriate
-- supporting teacher tracks the attendance using [Redi Attendance App](http://app.redi-school.org/)
+- supporting teacher tracks the attendance using [ReDI Attendance App](http://app.redi-school.org/)
 - since we often do not see each other in the class, make sure to participate in discussions on Slack - set up notifications, check Slack once in a while (the best daily) as we may need to adjust the plan, modify the content, react on issues that are time to time popping up.
 
 ## How to communicate with students?

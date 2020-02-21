@@ -1,6 +1,6 @@
 # How To Edit This Site?
 
-This [site](https://redi-j2-w.netlify.com) is based on [VuePress](https://vuepress.vuejs.org/) - VueJS based static site generator. There are couple of reasons why I chose VuePress and not something X:
+This [site](https://redi-j2.netlify.com) is based on [VuePress](https://vuepress.vuejs.org/) - VueJS based static site generator. There are couple of reasons why I chose VuePress and not something X:
 
 - no need to write ANY JS/HTML unless you really want to
 - pure markdown based
@@ -63,6 +63,6 @@ System.out.println("Code can be there too!")
 
 ## Git Repository
 
-The repository is hosted under the *Redi School* organisation on Github: [https://github.com/ReDI-School/java-intermediate-berlin-2019-winter-website](https://github.com/ReDI-School/java-intermediate-berlin-2019-winter-website). If you have no write access to it either create a pull request or ping me (`@micpalmia`) on Slack to add you as a collaborator.
+The repository is hosted under the *Redi School* organisation on Github: [https://github.com/ReDI-School/java-intermediate-berlin-2020-spring-website](https://github.com/ReDI-School/java-intermediate-berlin-2020-spring-website). If you have no write access to it either create a pull request or ping me (`@micpalmia`) on Slack to add you as a collaborator.
 
-This website was first created by (`@maciejwalkowiak`)[https://github.com/maciejwalkowiak] for the Spring 2019 version of the Java Intermediate Course.
+This website was first created by [`@maciejwalkowiak`](https://github.com/maciejwalkowiak) for the Spring 2019 version of the Java Intermediate Course.
