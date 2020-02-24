@@ -1,5 +1,4 @@
-# 01 - Introduction to Intermediate Java Course
-
+# 01 - Introduction to Intermediate Java
 <Teacher name="Michele"></Teacher>
 
 ## Goals
@@ -7,13 +6,13 @@
 - Getting to know each other
 - Get familiar with schedule, attendance, tools
 - Course introduction
-- Install required software
-- Do some basic Java exercises (hopefully 🤩)
+- Check required software
+- Do some basic Java exercises 🤩
 
 
 ## Slides
 
-<GoogleSlides src="https://docs.google.com/presentation/d/1pYFYnzWbZIh74X8k15qF4ij01lKnsZJfGyYI5V0ZpDs/embed?start=false&loop=false&delayms=3000&slide=id.gcb9a0b074_1_0"></GoogleSlides>
+<GoogleSlides src="https://docs.google.com/presentation/d/1bwG3EQqUcEVSo75xe1iHFrwBTNZOkn5ltp8LvunjEFA/embed?start=false&loop=false&delayms=3000&slide=id.gcb9a0b074_1_0"></GoogleSlides>
 
 ## Java Basics Recap
 
@@ -66,16 +65,20 @@ square(5,6)
 > 6 - 36
 ```
 
-<Solution>
+If you don't know where to start, try creating a new Java class called ExerciseIntro and copy-pasting the following into it!
+
 ```java
-private static void squares(int x, int y) {
-    for (int i = x; i < y; i++) {
-        System.out.println(i + " - " + (i * i));
+public class ExerciseIntro {
+    public static void main(String[] args) {
+        square(1, 3);
+        square(5, 6);
+    }
+
+    public static void square(int x, int y) {
+        // your code needs to go here!
     }
 }
 ```
-</Solution>
-
 
 ### Exercise 2
 
@@ -92,51 +95,7 @@ isFeminineNoun("Hund")
 
 Bonus: can you also make sure the method also catches words ending in _-ung_? Those are also feminine.
 
-<Solution>
-```java
-private static void isFeminineNoun(String noun) {
-    boolean isFeminine = noun.endsWith("e");
-    System.out.println(isFeminine);
-}
-
-private static void isFeminineNounExpanded(String noun) {
-    boolean isFeminine = noun.endsWith("e") || noun.endsWith("ung");
-    System.out.println(isFeminine);
-}
-```
-</Solution>
-
-### Exercise 3
-
-Let’s assume a freelancer has to pay insurance and income tax. Let’s assume insurance is fixed at 300€, while income tax is 9% for incomes of less than 1000€ (after insurance payment), and 21% otherwise.
-
-```java
-inPocket(5000)
-> 3713
-
-inPocket(1000)
-> 637
-```
-
-<Solution>
-```java
-private static void inPocket(int wage) {
-    int afterInsurance = wage - 300;
-    double taxation;
-
-    if (afterInsurance > 1000) {
-        taxation = afterInsurance * 0.21;
-    } else {
-        taxation = afterInsurance * 0.09;
-    }
-
-    double afterTaxes = afterInsurance - taxation;
-    System.out.println(afterTaxes);
-}
-```
-</Solution>
-
-## Homework
+### Homework
 
 Write a program that for given value of variable ‘height’ will print out the right-half of a pine tree to the console.
 
@@ -153,25 +112,6 @@ XYXY
 XYXYX
 M
 ```
-
-<Solution>
-```java
-private static void tree (int height) {
-    if (height < 3) {
-        System.out.println("A tree must have a height of at least 3");
-    }
-
-    System.out.println("I");
-    String treeLine = "X";
-    int effectiveHeight = height - 2;
-    for (int i=0; i< effectiveHeight; i++) {
-        treeLine += (i%2 == 0) ? "Y" : "X";
-        System.out.println(treeLine);
-    }
-    System.out.println("M");
-}
-```
-</Solution>
 
 ## Additional Resources
 
