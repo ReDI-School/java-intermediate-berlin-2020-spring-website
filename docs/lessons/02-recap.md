@@ -1,4 +1,4 @@
-# 01 - Introduction to Intermediate Java
+# 02 - Recap & Compiling a Java program
 <Teacher name="Flo"></Teacher>
 
 ## Goals
@@ -11,7 +11,22 @@
 
 ## Slides
 
-<GoogleSlides src="https://docs.google.com/presentation/d/1CG5d6teQjFnKcJ_d8YvcTvSOPcUEeO8D-U3Oq7nvqRw/edit#slide=id.p"></GoogleSlides>
+<GoogleSlides src="https://docs.google.com/presentation/d/e/2PACX-1vR7ZtxEYkaNjmf53n-y91HNBKbE16oU1F-Dmf0Vl6APcoaJCyQW8J5uK4tg49mRA4FHYjX5uUUqNxly/embed"></GoogleSlides>
+
+## Java compilation recap
+Compile:
+```
+javac MyFile.java
+e.g.
+javac HelloWorld.java
+```
+
+Run the class file:
+```
+java MyFile
+e.g.
+java HelloWorld
+```
 
 ## Exercises
 
@@ -72,6 +87,20 @@ The sum of the digits is: 7
 ### Exercise 4 - hard
 
 Write a Java program to create and display unique three-digit number using 1, 2, 3, 4.
+Repeating numbers are not allowed.
+Valid examples:
+```
+123                                                                                                      
+124                                                                                                      
+132                                                                                                      
+134
+```
+Invalid examples:
+```
+122
+111
+212
+```
 
 Hint: You need nested for loops.
 
@@ -80,9 +109,3 @@ Hint2: There are 24 numbers.
 ### Homework
 
 Finish the one from Monday + if possible today's tasks.
-
-## Additional Resources
-
-- [The Java Tutorials (from Oracle)](https://docs.oracle.com/javase/tutorial/)
-- [W3Schools Java Tutorial](https://www.w3schools.com/java/)
-- [O'Reilly Programming Podcasts](https://www.oreilly.com/topics/oreilly-programming-podcast)
