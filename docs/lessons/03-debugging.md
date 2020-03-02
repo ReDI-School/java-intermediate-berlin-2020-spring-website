@@ -1,4 +1,4 @@
-# 02 - Debugging a Java program with IntelliJ
+# 03 - Debugging a Java program with IntelliJ
 <Teacher name="Thomas"></Teacher>
 
 ## Agenda
