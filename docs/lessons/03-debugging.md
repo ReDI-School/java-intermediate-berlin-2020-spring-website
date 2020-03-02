@@ -80,7 +80,7 @@ Output:   B C D E F G H I J K L M N O P Q R S T U V W X Y Z A
 
 The input `hello` would become `IFMMP`.
 
-**Optional**: Use the parameter that gets passed to the main method.
+**Optional**: Use the `args` parameter to receive external input.
 
 **Optional**: Implement decryption as well.
 
