@@ -17,7 +17,7 @@
 
 Let's debug this piece of code:
 
-```
+```java
 public class FizzBuzz {
 
     public static void main(String[] args) {
