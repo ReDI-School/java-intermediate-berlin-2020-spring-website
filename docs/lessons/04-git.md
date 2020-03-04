@@ -19,6 +19,12 @@ Version control is like a savings program for your project.
 By tracking and logging the changes you make to your file or file sets over time, a version-control system gives you the power to review or even restore earlier versions. 
 Version control takes snapshots of every revision to your project. You can then access these versions to compare or restore them as needed.
 
+Questions that Version control helps to answer
+- Which changes were made?
+- Who made the changes?
+- When were the changes made?
+- Why were changes needed?
+
 ## Git
 Git is an extremely popular version control system that is at the heart of a wide variety of high-profile projects.
 Git is a distributed version-control system for tracking changes in source code during software development. 
@@ -32,6 +38,15 @@ GitHub is a cloud-based hosting service that lets you manage Git repositories.
 https://github.com/
 You can create a free account at GitHub
 Other Git repository hosting services also exist: GitLab, BitBucket, and SourceForge 
+
+## Git Commands
+Some of the git commands that are behind Intellij Magic 
+- git add
+- git commit
+- git push 
+- git pull (fetch & merge)
+- git init
+- git clone
 
 ## Intellij & GitHub Integration
 - In Intellij: Integrate Intellij with GitHub 
@@ -110,3 +125,8 @@ Add it to your GitHub profile
 
 ## Homework
 Upload your code from the previous classes to your GitHub profile & Finish the java tasks
+
+## Links
+- https://git-scm.com/ 
+- https://www.jetbrains.com/help/idea/github.html
+- https://guides.github.com/introduction/git-handbook/
