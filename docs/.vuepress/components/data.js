@@ -2,7 +2,7 @@ const teachers = {
     current: {
         'Abdulla': {
             name: 'Abdulla',
-            avatar: 'https://ui-avatars.com/api/?name=A&size=100'
+            avatar: 'https://media-exp1.licdn.com/dms/image/C5103AQHggPpueVptXQ/profile-displayphoto-shrink_200_200/0?e=1590019200&v=beta&t=Hoy1mkeSoQpkNLNLckR3-E2ocPy4O0MfxbAzCPmcbpQ'
         },
         'Alex': {
             name: 'Alex',
