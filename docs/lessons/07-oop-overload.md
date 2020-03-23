@@ -13,9 +13,8 @@
 
 Remember - one file per class, one class per file, and always with the same name!
 
+#### Main.java
 ```java
-Main.java
-==========
 public class Main {
   public static void main(String[] args) {
     Student bob = new Student("Bob", 36, false, "Berlin");
@@ -41,9 +40,11 @@ public class Main {
     jane.introduce();
   }
 }
+```
 
-Student.java
-=============
+#### Student.java
+
+```java
 import java.util.ArrayList;
 
 public class Student {
