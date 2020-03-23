@@ -80,6 +80,16 @@ public class ExerciseIntro {
 }
 ```
 
+<Solution>
+```java
+private static void squares(int x, int y) {
+    for (int i = x; i < y; i++) {
+        System.out.println(i + " - " + (i * i));
+    }
+}
+```
+</Solution>
+
 ### Exercise 2
 
 In german, nouns ending with e are almost always feminine. Write a method _isFeminineNoun_ that checks if the provided word ends with e or not.
@@ -94,6 +104,20 @@ isFeminineNoun("Hund")
 ```
 
 Bonus: can you also make sure the method also catches words ending in _-ung_? Those are also feminine.
+
+<Solution>
+```java
+private static void isFeminineNoun(String noun) {
+    boolean isFeminine = noun.endsWith("e");
+    System.out.println(isFeminine);
+}
+
+private static void isFeminineNounExpanded(String noun) {
+    boolean isFeminine = noun.endsWith("e") || noun.endsWith("ung");
+    System.out.println(isFeminine);
+}
+```
+</Solution>
 
 ### Homework
 
@@ -112,6 +136,25 @@ XYXY
 XYXYX
 M
 ```
+
+<Solution>
+```java
+private static void tree (int height) {
+    if (height < 3) {
+        System.out.println("A tree must have a height of at least 3");
+    }
+
+    System.out.println("I");
+    String treeLine = "X";
+    int effectiveHeight = height - 2;
+    for (int i=0; i< effectiveHeight; i++) {
+        treeLine += (i%2 == 0) ? "Y" : "X";
+        System.out.println(treeLine);
+    }
+    System.out.println("M");
+}
+```
+</Solution>
 
 ## Additional Resources
 
