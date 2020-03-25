@@ -1,4 +1,4 @@
-# 07 - OOP and Overloading
+# 08 - OOP Recap
 <Teacher name="Flo"></Teacher>
 
 ## Goals
