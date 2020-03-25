@@ -2,9 +2,8 @@
 <Teacher name="Flo"></Teacher>
 
 ## Goals
-- Know most parts of a method declaration
-- Understand method construction
-- Knowing what **overloading** is!
+- Recap of OOP practices - everybody should understand them fully afterwards
+- Practice
 
 ## Slides
 <GoogleSlides src="https://docs.google.com/presentation/d/e/2PACX-1vQknvfUWxCQYPD1uRjxbaaDfG5XJBuTt2GEG0q_DYBTNb3Po26Lv7tl7RE5iMudkHB0HbPtpAJ-eOTU/embed"></GoogleSlides>
