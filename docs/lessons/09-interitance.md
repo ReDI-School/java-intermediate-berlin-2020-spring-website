@@ -60,6 +60,12 @@ public class Person {
 2. Let's add constructors to the `Person`, `Student` & `Teacher` classes
 3. Let's override `introduce()` method of the `Student` and `Teacher` classes
 
+### Packages
+A package in Java is used to group related classes. Think of it as a folder in a file directory. We use packages to avoid name conflicts, and to write a better maintainable code. Packages are divided into two categories:
+
+Built-in Packages (packages from the Java API)
+User-defined Packages (create your own packages)
+
 ### What you can do in a Subclass
 
 A subclass inherits all of the public and protected members of its parent, no matter what package the subclass is in. If the subclass is in the same package as its parent, it also inherits the package-private members of the parent. You can use the inherited members as is, replace them, hide them, or supplement them with new members:
