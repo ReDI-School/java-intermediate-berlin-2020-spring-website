@@ -4,7 +4,7 @@
 ## Goals
 - Understand what is Inheritance and why do we need it 
 - Understand what is Overriding
-- Understand what is difference between Overriding and Overloading
+- Understand what is the difference between Overriding and Overloading
 - Create Classes with hierarchy
 - Create overridden methods and constructors
 
