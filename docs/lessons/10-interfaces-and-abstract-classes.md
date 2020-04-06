@@ -22,7 +22,7 @@ At the end of the class, attendees should be able to
 
 ### Netflix, continued
 
-Review the [Netflix task](http://localhost:8080/lessons/09-interitance.html#inheritance) from the [previous lesson](http://localhost:8080/lessons/09-interitance.html) and re-implement it **without using inheritance**. Use only the concepts studied in this lesson.
+Review the [Netflix task](https://redi-j2.netlify.com/lessons/09-interitance.html#inheritance) from the [previous lesson](https://redi-j2.netlify.com/lessons/09-interitance.html) and re-implement it **without using inheritance**. Use only the concepts studied in this lesson.
 
 Below are the main requirements to keep in mind when working through this task.
 
@@ -34,9 +34,16 @@ Below are the main requirements to keep in mind when working through this task.
     - the number of `devices` the user can watch on at the same time
     - whether HD or Ultra HD is available
     - etc.
+- A `device` has a unique ID.
 - A `user` can not watch a `movie` in *HD* if they don't have the `Standard` or `Premium` plan.
 - A `user` can not watch a `movie` in *Ultra HD* if they don't have the `Premium` plan.
 - A `user` can not watch a `movie` if they're simultaneously watching movies on as many devices as allowed by their `plan`.
+
+#### Nice to have
+
+- A `user` can watch on different types of `devices`: `Phone`, `Tablet` and `TV`.
+- Some devices don't support *Ultra HD* (e.g. `Phones`).
+- A `user` can not watch a `movie` in *Ultra HD* if the device they want to watch on does not have *Ultra HD* support (even if they have the `Premium` plan.
 
 Discuss within your group about the objects involved and the relationships between them, the appropriate abstractions to use (interfaces or abstract classes) and why.
 
