@@ -32,12 +32,14 @@
   - Create a `point1 =  Point(3, 4)`
   - Create another `point2 = Point(3, 4)`
   - Create another `point3 = Point(2, 5)`
+  - Create another `point4 = point1`
 
 - Answer the following question without coding:
   - [No code] What is `point1.equals(point2)` ? Why?
   - [No code] What is `point1 == point2` ? Why?
   - [No code] What is `point1.equals(point1)` ? Why?
   - [No code] What is `point1 == point1` ? Why?
+  - [No code] What is `point1 == point4` ? Why?
   - [No code] What is `point1.hashCode()`?
   - [No code] What is `point3.hashCode()`?
   - [No code] What is `point1.equals(point3)` ? Why?
@@ -59,9 +61,10 @@ Using intellij, generate `equals()` and `hashCode()` for the  classes created in
 - Define another class called `Bucket` with one property
   - `final List<Point> items` initialized as an empty list
 - Implement the following methods in `Bucket`
-  - `void add(Point point)` adds `point` into `items` if `items` does not contain `point`.
   - `boolean contains(Point point)` returns `true` if `items` contains `point` otherwise returns `false`. Here
      you must use a for loop over `items` and use the `equals` method to compare the `Points`.
+  - `void add(Point point)` adds `point` into `items` if `items` does not contain `point`. 
+     Feel free to use the previously defined `contains` method.
   - `int size()` returning the size of `items`
 
 - Define another class called MyHashSet with one property
