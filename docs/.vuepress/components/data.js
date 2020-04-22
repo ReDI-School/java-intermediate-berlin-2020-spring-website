@@ -31,6 +31,10 @@ const teachers = {
         'Toto': {
             name: 'Toto',
             avatar: 'https://ui-avatars.com/api/?name=T&size=100'
+        },
+        'Sunday': {
+            name: 'Sunday',
+            avatar: 'https://s.gravatar.com/avatar/dbe4582dd5ef7bc75782501be040acba?s=400'
         }
     },
     previous: {
