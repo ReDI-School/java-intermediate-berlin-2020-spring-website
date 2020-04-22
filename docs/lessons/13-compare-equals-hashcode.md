@@ -1,4 +1,4 @@
-# 12 - Comparing Objects: Equals & Hash Code
+# 13 - Comparing Objects: Equals & Hash Code
 
 <Teacher name="Sunday"></Teacher>
 
