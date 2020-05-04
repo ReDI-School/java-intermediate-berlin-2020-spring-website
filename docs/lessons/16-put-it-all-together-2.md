@@ -11,7 +11,7 @@
 
 Today's lesson is again completely in the form of a long, interactive exercise. Here you find the outline of what we'll build. Afterwards, you can find a similar exercise to try later.
 
-### :music_note: What do we listen to? :music_note: 
+### :musical_note: What do we listen to? :musical_note: 
 
 Today will be all about music. We're going to build a streaming service.
 The feature our users want most, is to gather listening statistics per track, per artist, per album and per user.
@@ -39,6 +39,117 @@ What structures do we need? Let's create them!
 
 #### Let's add some data
 Add some tracks to your streaming service. Do your assumptions hold? Can you answer all the questions?
+
+#### Starting point
+<Solution>
+```java
+StreamingService.java
+Player player;
+
+
+public static void main(String... args) {
+	// create some data
+	player.play(track, user);
+	player.play(track1, user);
+	player.play(track2, user2);
+	player.play(track3, user);
+	player.play(track, user2);
+	player.play(track, user2);
+	player.play(track, user2);
+	player.play(track, user2);
+	player.play(track, user2);
+	player.play(track, user);
+	player.play(track3, user);
+	player.play(track4, user);
+	player.play(track5, user);
+	player.play(track6, user);
+
+	// call the statistics from player
+}
+
+
+
+
+Player.java:
+RediStreamingStatistics rediStatistics;
+Map<User, UserStatistics> userStatistics;
+Map<Artist, Artiststatistic> artistStatistics;
+
+play(Track track, User user) {
+	rediStatistics.recordPlay();
+	userStatistics.get(user).recordPlay(track);
+	artistStatistics.get(track.getArtist()).recordPlay(user);
+	System.out.println("User "+ user.name() + " plays the track "+ track.name());
+}
+
+User getTopFanForArtist(Artist artist) {
+	return artistStatistics.get(artist).getTopFan();
+}
+
+
+----------------------
+RediStreamingStatistics.java
+
+recordPlay(){
+	this.totalPlays = this.totalPlays + 1;
+}
+
+----------------------
+UserStatistics.java
+Map<Track, Integer> trackPlays;
+Map<Artist, Integer> artistPlays;
+
+recordPlay(Track track) {
+	int totalTrackStreams = this.trackPlays.get(track) + 1;
+	this.trackPlays.set(track, totalTrackStreams);
+	int totalArtistStreams = this.artistPlays.get(track.getArtist()) + 1;
+	this.artistPlays.set(track.getArtist(), totalArtistStreams);
+}
+
+public Track getFavoriteTrack() {
+	int currentMax = 0;
+	Track maxTrack;
+	for(Track t : trackPlays.keySet()) {
+		int trackNumber = trackPlays.get(t);
+		if (trackNumber > currentMax) {
+			currentMax = trackNumber;
+			maxTrack = t;
+		}
+	}
+	if (currentMax == 0) {
+		System.out.println("No streams, therefore no top track");
+		return maxTrack;
+	}
+	return maxTrack;
+}
+
+public Track getFavoriteArtist() {
+	// exactly the same but with artistMap
+}
+
+----------------------
+ArtistStatistics.java
+Map<User, Integer> trackPlays;
+
+recordPlay(User user){
+	int totalStreams = this.trackPlays.get(user) + 1;
+	this.trackPlays.set(user, totalStreams);
+}
+
+public User getTopFan() {
+	// Loop over trackPlays map and find the Maximum integer.
+	// Return the user of the maximum integer.
+	// useful functions:
+	// Map.keySet() => returns all keys of the map
+}
+
+public int getDifferentUserCount() {
+	return trackPlays.keySet().size();
+}
+----------------------
+
+```
+</Solution>
 
 ### Expand it
 If you're done and you have all the results, can you add a genre?
