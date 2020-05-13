@@ -35,6 +35,10 @@ const teachers = {
         'Sunday': {
             name: 'Sunday',
             avatar: 'https://s.gravatar.com/avatar/dbe4582dd5ef7bc75782501be040acba?s=400'
+        },
+        'Chak' : {
+            name : 'Chakradhar',
+            avatar: 'https://avatars3.githubusercontent.com/u/60215036?s=400&u=4d760f0875e3425e36bce51c906334e5508ade73&v=4'
         }
     },
     previous: {
