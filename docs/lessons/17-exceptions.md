@@ -3,9 +3,9 @@
 <Teacher name="Chak"></Teacher>
 
 ## Goals
-- Understand what exception is
-- Understand why exception is needed
-- Know how to handle exception
+- Understand what exceptions are
+- Understand why exceptions are needed
+- Know how to handle exceptions
 
 ## Slides
 <GoogleSlides src="https://docs.google.com/presentation/d/1ozo-K0SrU9S1h8tYdF58pUhcc_VB4FMyyPgJMDBNPPM/embed?start=false&loop=false&delayms=3000"></GoogleSlides>
@@ -27,7 +27,7 @@ In _main_ method
 - Create a new fruit ArrayList with values "Banana" , "Apple" , "Peach" and null
 - Print 5th element of the list
 - Try to loop and print the length of the Fruit and its length
-- Observe the exceptions thrown and handle it using multiple catch blocks?
+- Observe the exceptions thrown and handle them using multiple catch blocks?
 
 ## Exercise 4
 In _main_ method
