@@ -1,4 +1,4 @@
-# 24 - Coding challenges and interview questions
+# 22 - Coding challenges and interview questions
 
 <Teacher name="Alina"></Teacher>
 
@@ -9,7 +9,12 @@
 
 ### Examples
 
-**1. Reverting a string**
+**1.FizzBuzz**
+
+Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. 
+For numbers which are multiples of both three and five print “FizzBuzz”.
+
+**2. Reverting a string**
 
 Print out a string in reverse order.
 
@@ -38,7 +43,7 @@ Output : 20
 ```
 
 <BR />
-**Questions Marks** (from [https://www.coderbyte.com/editor/Questions%20Marks:Java](https://www.coderbyte.com/editor/Questions%20Marks:Java))
+**3. Questions Marks** (from [https://www.coderbyte.com/editor/Questions%20Marks:Java](https://www.coderbyte.com/editor/Questions%20Marks:Java))
 
 Have the function `QuestionsMarks(str)` take the `str` string parameter, which will contain single digit numbers, letters, and question marks, and check if there are exactly 3 question marks between every pair of two numbers that add up to 10. If so, then your program should return the string `true`, otherwise it should return the string `false`. If there aren't any two numbers that add up to 10 in the string, then your program should return `false` as well.
 
